@@ -18,7 +18,7 @@ class HomeMobile extends StatelessWidget {
         children: [
           Positioned(
             bottom: 0.0,
-            right: -AppDimensions.normalize(25),
+            right: -AppDimensions.normalize(-35),
             child: Opacity(
               opacity: 0.9,
               child: Image.asset(
