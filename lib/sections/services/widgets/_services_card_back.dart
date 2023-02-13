@@ -28,7 +28,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
             color: AppTheme.c!.primary,
             onPressed: () => showDialog(
                 context: context,
-                builder: (contecxt) => AlertDialog(
+                builder: (context) => AlertDialog(
                       title: Text(
                         "Hire Me!",
                         style: AppText.b2b,
@@ -46,7 +46,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=923460159889',
+                              'https://api.whatsapp.com/send?phone=2349031887457',
                             ),
                             color: const Color(0xff34CB62),
                             child: Row(
@@ -70,7 +70,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://www.upwork.com/freelancers/~0197b0f6aaeba9675f',
+                              'https://www.upwork.com/freelancers/~01687e17502613651d',
                             ),
                             color: const Color(0xff13A800),
                             child: Row(
