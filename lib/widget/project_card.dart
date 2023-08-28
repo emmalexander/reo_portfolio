@@ -58,7 +58,8 @@ class ProjectCardState extends State<ProjectCard> {
       },
       child: Container(
         margin: Space.h,
-        padding: Space.all(),
+        //padding: Space.all(),
+        clipBehavior: Clip.hardEdge,
         width: AppDimensions.normalize(150),
         height: AppDimensions.normalize(90),
         decoration: BoxDecoration(
@@ -91,6 +92,7 @@ class ProjectCardState extends State<ProjectCard> {
                         ? Image.asset(
                             widget.projectIcon!,
                             height: height * 0.05,
+                            fit: BoxFit.fitWidth,
                           )
                         : Row(
                             mainAxisSize: MainAxisSize.min,
@@ -98,6 +100,7 @@ class ProjectCardState extends State<ProjectCard> {
                               Image.asset(
                                 widget.projectIcon!,
                                 height: height * 0.03,
+                                fit: BoxFit.fitHeight,
                               ),
                               SizedBox(
                                 width: width * 0.01,
@@ -145,10 +148,11 @@ class ProjectCardState extends State<ProjectCard> {
               duration: const Duration(milliseconds: 400),
               opacity: isHover ? 0.0 : 1.0,
               child: FittedBox(
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
                 child: widget.banner != null
                     ? Image.asset(
                         widget.banner!,
+                        //fit: BoxFit.fill,
                       )
                     : Container(),
               ),

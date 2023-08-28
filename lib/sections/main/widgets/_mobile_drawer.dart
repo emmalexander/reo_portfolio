@@ -25,11 +25,14 @@ class _MobileDrawer extends StatelessWidget {
                   Icons.light_mode,
                   color: AppTheme.c!.primary!,
                 ),
-                title: const Text(
+                title: Text(
                   "Dark Mode",
+                  style: TextStyle(
+                    color: appProvider.isDark ? Colors.white : Colors.black,
+                  ),
                 ),
-                trailing: Switch(
-                  inactiveTrackColor: Colors.grey,
+                trailing: CupertinoSwitch(
+                  //inactiveTrackColor: Colors.grey,
                   value: appProvider.isDark,
                   onChanged: (value) {
                     appProvider
@@ -55,7 +58,11 @@ class _MobileDrawer extends StatelessWidget {
                           ),
                           title: Text(
                             e.value,
-                            style: AppText.l1,
+                            style: TextStyle(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black,
+                            ),
                           ),
                         ),
                       ),
@@ -69,13 +76,16 @@ class _MobileDrawer extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5.0),
                       side: BorderSide(color: AppTheme.c!.primary!)),
                   onPressed: () => openURL(StaticUtils.resume),
-                  child: const ListTile(
-                    leading: Icon(
+                  child: ListTile(
+                    leading: const Icon(
                       Icons.book,
                       color: Colors.red,
                     ),
                     title: Text(
                       'RESUME',
+                      style: TextStyle(
+                        color: appProvider.isDark ? Colors.white : Colors.black,
+                      ),
                     ),
                   ),
                 ),

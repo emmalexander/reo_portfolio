@@ -48,8 +48,8 @@ class _NavbarDesktop extends StatelessWidget {
             ),
           ),
           Space.x!,
-          Switch(
-            inactiveTrackColor: Colors.grey,
+          CupertinoSwitch(
+            //inactiveTrackColor: Colors.grey,
             value: appProvider.isDark,
             onChanged: (value) {
               appProvider.setTheme(
@@ -83,9 +83,7 @@ class _NavBarTablet extends StatelessWidget {
             onPressed: () {
               drawerProvider.key.currentState!.openDrawer();
             },
-            icon: const Icon(
-              Icons.menu,
-            ),
+            icon: const Icon(Icons.menu),
           ),
           Space.xm!,
           const NavBarLogo(),

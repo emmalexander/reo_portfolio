@@ -25,7 +25,8 @@ class AppTheme {
     backgroundSub: const Color(0xff1c1c1e),
     scaffold: const Color(0xff0e0e0e),
     text: Colors.white,
-    textSub2: Colors.white.withOpacity(0.25),
+    textSub: Colors.white,
+    textSub2: Colors.white,
   );
 
   static AppCoreTheme? c;
