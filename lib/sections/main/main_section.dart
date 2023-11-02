@@ -16,7 +16,7 @@ import 'package:universal_html/html.dart' as html;
 import 'package:flutter/material.dart';
 import 'package:folio/constants.dart';
 import 'package:folio/widget/arrow_on_top.dart';
-import 'package:web_smooth_scroll/web_smooth_scroll.dart';
+//import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
 part 'widgets/_navbar_desktop.dart';
 part 'widgets/_mobile_drawer.dart';
